@@ -2,39 +2,134 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="./images/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <p class="header__rec" aria-hidden="true">REC</p>
+      <h1 class="header__title">no focus</h1>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
+            <button class="header__theme-menu-button header__theme-menu-button_type_light">День</button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
+            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>Авто</button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
+            <button class="header__theme-menu-button header__theme-menu-button_type_dark">Неон</button>
           </li>
         </ul>
       </nav>
+      <p class="header__description title-decor">
+        В этом проекте перед вами амбициозная задача: сверстать адаптивный сайт в светлой и тёмной темах, а также настроить автоматическое переключение между ними в зависимости от системных настроек пользователя. Вы не будете начинать с чистого листа. В заготовке проекта есть нужная структура со всеми файлами, шрифтами, картинками и скриптом переключения темы.
+      </p>
     </header>
+
+    <main class="main">
+      <section class="section">
+        <h2 class="section__title">Почему так сложно сосредоточиться?</h2>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title title-decor">Проверьте свой телефон</h3>
+            <p class="card__text">
+              Уведомления, сообщения и социальные сети постоянно отвлекают наше внимание. Когда мы слышим звук уведомления, наш мозг переключается на него, и нам требуется время, чтобы вернуться к предыдущей задаче.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Мозг не предназначен для выполнения нескольких задач одновременно. Когда мы пытаемся делать несколько дел сразу, наша продуктивность падает, а уровень стресса растёт.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Усталость</h3>
+            <p class="card__text">
+              Если вы не высыпаетесь или постоянно находитесь в состоянии стресса, ваш мозг не может эффективно концентрироваться на важных задачах.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Как концентрироваться лучше?</h2>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title title-decor">Уберите телефон</h3>
+            <p class="card__text">
+              Отложите устройство в другую комнату, чтобы не было соблазна проверить его. Если вы используете телефон для работы, отключите все уведомления, кроме самых важных.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Практикуйте осознанность</h3>
+            <p class="card__text">
+              Медитация и дыхательные упражнения помогают вернуть фокус. Попробуйте выделять 5-10 минут в день на то, чтобы побыть в тишине и сосредоточиться на своих ощущениях.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Делайте перерывы</h3>
+            <p class="card__text">
+              Работа без перерывов истощает мозг. Используйте технику Pomodoro: 25 минут работы, затем 5 минут отдыха.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">4 совета от автора</h2>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title title-decor">Планируйте день</h3>
+            <p class="card__text">
+              Составьте список задач на день и придерживайтесь его. Это поможет вам оставаться организованным и не отвлекаться на мелочи.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Создайте комфортную среду</h3>
+            <p class="card__text">
+              Убедитесь, что ваше рабочее место удобно и не отвлекает. Уберите лишние предметы и обеспечьте хорошее освещение.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Занимайтесь спортом</h3>
+            <p class="card__text">
+              Физическая активность помогает улучшить кровообращение и повысить уровень энергии, что способствует лучшей концентрации.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Спите достаточно</h3>
+            <p class="card__text">
+              Недостаток сна негативно сказывается на когнитивных функциях. Старайтесь спать 7-8 часов в сутки.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section">
+        <h2 class="section__title">Смотрите, как красиво</h2>
+        <div class="gallery">
+          <img src="./images/sunset.png" alt="Закат" class="gallery__image gallery__image_type_wide" loading="lazy" />
+          <img src="./images/ice-cream.png" alt="Мороженое" class="gallery__image" loading="lazy" />
+          <img src="./images/tape.png" alt="Кассета" class="gallery__image gallery__image_type_tall" loading="lazy" />
+          <img src="./images/books.png" alt="Книги" class="gallery__image" loading="lazy" />
+          <img src="./images/street.png" alt="Улица" class="gallery__image" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title">focus</h2>
+    </footer>
   </body>
 </html>
