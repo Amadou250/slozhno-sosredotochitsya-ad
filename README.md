@@ -1,1 +1,1 @@
-# Проектная работа "Сложно сосредоточиться"
+https://github.com/Amadou250/slozhno-sosredotochitsya-ad
